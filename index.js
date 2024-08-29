@@ -25,5 +25,5 @@ app.get("/about", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log("Express server initialized");
+  console.log("Express server initialized", PORT);
 });
