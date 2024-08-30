@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
     {
       id: 2,
       name: "Jane",
-      email: "oqibz@example.com",
+      email: "jane@example.com",
     },
   ];
   res.send(data);
