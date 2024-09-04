@@ -1,4 +1,5 @@
 import express from "express";
+import UserRoutes from "./Routes/UserRoutes.js";
 
 const app = express();
 
@@ -23,6 +24,8 @@ app.get("/", (req, res) => {
 app.get("/about", (req, res) => {
   res.send("This is about page");
 });
+
+app.use("/api/user", UserRoutes);
 
 app.listen(PORT, () => {
   console.log("Express server initialized", PORT);
